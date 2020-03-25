@@ -1,0 +1,63 @@
+DemoModeService:
+    DemoModeEmailSuffix:
+        settings-key: DemoModeEmailSuffix
+    Db:
+        LogsConnString:
+            settings-key: DemoModeService-LogsConnString
+            types:
+              - AzureTableStorage
+    RabbitMq:
+        UserManagementConnString:
+             settings-key: UserManagementRabbitMQ
+             types:
+                - RabbitMq
+        WalletManagementConnString:
+             settings-key: WalletManagementRabbitMQ
+             types:
+                - RabbitMq
+    PaymentRequestModel:
+        PaymentRequestDelayInMilliseconds:
+            settings-key: DemoModeService-PaymentRequestDelayInMilliseconds
+        TokensAmount:
+            settings-key: DemoModeService-TokensAmount
+            types:
+              - Optional
+              - Exclusive or FiatAmount
+        FiatAmount:
+            settings-key: DemoModeService-FiatAmount
+            types:
+              - Optional
+              - Exclusive or TokensAmount
+        TotalFiatAmount:
+            settings-key: DemoModeService-TotalFiatAmount
+        Currency:
+            settings-key: DemoModeService-Currency
+        PaymentInfo:
+            settings-key: DemoModeService-PaymentInfo
+        CustomerExpirationInSeconds:
+            settings-key: DemoModeService-CustomerExpirationInSeconds
+            types:
+              - Optional
+SlackNotifications:
+    AzureQueue:
+        ConnectionString:
+            settings-key: SlackNotificationsConnString
+            types:
+                - AzureTableStorage
+        QueueName:
+            settings-key: SlackQueueName
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
+CustomerProfileServiceClient:
+    ServiceUrl:
+        settings-key: CustomerProfileServiceUrl
+PartnersIntegrationServiceClient:
+  ServiceUrl:
+    settings-key: PartnersIntegrationServiceUrl
+PartnerManagementServiceClient:
+  ServiceUrl:
+    settings-key: PartnerManagementServiceUrl
+CustomerManagementServiceClient:
+    ServiceUrl :
+        settings-key: CustomerManagementServiceUrl
