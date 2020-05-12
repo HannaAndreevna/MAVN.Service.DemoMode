@@ -1,7 +1,7 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Lykke.Common.Log;
 using MAVN.Service.DemoMode.Domain.Services;
-using Lykke.Service.Sessions.Contracts;
+using MAVN.Service.Sessions.Contracts;
 
 namespace MAVN.Service.DemoMode.DomainServices.Subscribers
 {
