@@ -1,7 +1,7 @@
-using System.Threading.Tasks;
-using Lykke.Service.CustomerManagement.Contract.Events;
-using Lykke.Service.PartnersPayments.Contract;
-using Lykke.Service.Sessions.Contracts;
+﻿using System.Threading.Tasks;
+using MAVN.Service.CustomerManagement.Contract.Events;
+using MAVN.Service.PartnersPayments.Contract;
+using MAVN.Service.Sessions.Contracts;
 
 namespace MAVN.Service.DemoMode.Domain.Services
 {

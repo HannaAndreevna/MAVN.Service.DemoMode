@@ -1,8 +1,8 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
 using Lykke.Common;
 using Lykke.RabbitMqBroker.Publisher;
-using Lykke.Service.CustomerManagement.Contract.Events;
+using MAVN.Service.CustomerManagement.Contract.Events;
 using MAVN.Service.DemoMode.DomainServices.Subscribers;
 using MAVN.Service.DemoMode.Settings;
 using Lykke.SettingsReader;

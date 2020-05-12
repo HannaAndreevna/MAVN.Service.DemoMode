@@ -1,9 +1,9 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using Lykke.Sdk.Settings;
-using Lykke.Service.CustomerManagement.Client;
-using Lykke.Service.CustomerProfile.Client;
-using Lykke.Service.PartnersIntegration.Client;
-using Lykke.Service.PartnerManagement.Client;
+using MAVN.Service.CustomerManagement.Client;
+using MAVN.Service.CustomerProfile.Client;
+using MAVN.Service.PartnersIntegration.Client;
+using MAVN.Service.PartnerManagement.Client;
 
 namespace MAVN.Service.DemoMode.Settings
 {
